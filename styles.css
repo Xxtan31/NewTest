@@ -1,12 +1,9 @@
 /* Font Ayarları */
 @font-face {
     font-family: 'Satoshi';
-    src: url('//cdn.fontshare.com/wf/NWBQYJIM7GCZ5XWD7D26ARB3VDY55ZRT/K63EV2KZIGKLE7RANQ2U42S6SVHU5RJ7/X6XYTKIVDUW7GZTZPZNN4EUM5KH54KHF.woff2') format('woff2'),
-         url('//cdn.fontshare.com/wf/NWBQYJIM7GCZ5XWD7D26ARB3VDY55ZRT/K63EV2KZIGKLE7RANQ2U42S6SVHU5RJ7/X6XYTKIVDUW7GZTZPZNN4EUM5KH54KHF.woff') format('woff'),
-         url('//cdn.fontshare.com/wf/NWBQYJIM7GCZ5XWD7D26ARB3VDY55ZRT/K63EV2KZIGKLE7RANQ2U42S6SVHU5RJ7/X6XYTKIVDUW7GZTZPZNN4EUM5KH54KHF.ttf') format('truetype');
+    src: url('//cdn.fontshare.com/wf/NWBQYJIM7GCZ5XWD7D26ARB3VDY55ZRT/K63EV2KZIGKLE7RANQ2U42S6SVHU5RJ7/X6XYTKIVDUW7GZTZPZNN4EUM5KH54KHF.woff2') format('woff2');
     font-weight: 300 900;
     font-display: swap;
-    font-style: normal;
 }
 
 body {
@@ -50,21 +47,16 @@ nav ul li a {
     font-weight: bold;
 }
 
-.content {
+.container {
     text-align: center;
     margin-top: 100px;
-}
-
-.box {
-    display: inline-block;
-    padding: 20px;
-    border: 1px solid white;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.1));
     border-radius: 10px;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.1));
-    margin-bottom: 20px;
+    padding: 20px;
+    display: inline-block;
 }
 
-.box-title {
+h2 {
     margin-bottom: 20px;
 }
 
@@ -90,9 +82,17 @@ nav ul li a {
 }
 
 .btn-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+}
+
+.btn-container p {
+    margin: 0;
+    margin-bottom: 5px;
 }
 
 .btn-discord {
@@ -127,19 +127,4 @@ nav ul li a {
 
 .btn-youtube span {
     color: white;
-}
-
-.btn-music {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: white;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.btn-music:hover {
-    background: gray;
 }
