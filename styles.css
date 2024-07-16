@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: url('https://r2.guns.lol/f549d67c-c15e-4c5f-86f0-0dcdd8f27b67.gif') no-repeat center center fixed;
+    background: url(https://r2.guns.lol/f549d67c-c15e-4c5f-86f0-0dcdd8f27b67.gif') no-repeat center center fixed;
     background-size: cover;
     color: white;
 }
