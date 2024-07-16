@@ -1,29 +1,17 @@
-/* Satoshi */
+/* Font Ayarları */
 @font-face {
-  font-family: 'Satoshi';
-  src: url('//cdn.fontshare.com/wf/NWBQYJIM7GCZ5XWD7D26ARB3VDY55ZRT/K63EV2KZIGKLE7RANQ2U42S6SVHU5RJ7/X6XYTKIVDUW7GZTZPZNN4EUM5KH54KHF.woff2') format('woff2'),
-       url('//cdn.fontshare.com/wf/NWBQYJIM7GCZ5XWD7D26ARB3VDY55ZRT/K63EV2KZIGKLE7RANQ2U42S6SVHU5RJ7/X6XYTKIVDUW7GZTZPZNN4EUM5KH54KHF.woff') format('woff'),
-       url('//cdn.fontshare.com/wf/NWBQYJIM7GCZ5XWD7D26ARB3VDY55ZRT/K63EV2KZIGKLE7RANQ2U42S6SVHU5RJ7/X6XYTKIVDUW7GZTZPZNN4EUM5KH54KHF.ttf') format('truetype');
-  font-weight: 300 900;
-  font-display: swap;
-  font-style: normal;
+    font-family: 'Satoshi';
+    src: url('//cdn.fontshare.com/wf/NWBQYJIM7GCZ5XWD7D26ARB3VDY55ZRT/K63EV2KZIGKLE7RANQ2U42S6SVHU5RJ7/X6XYTKIVDUW7GZTZPZNN4EUM5KH54KHF.woff2') format('woff2'),
+         url('//cdn.fontshare.com/wf/NWBQYJIM7GCZ5XWD7D26ARB3VDY55ZRT/K63EV2KZIGKLE7RANQ2U42S6SVHU5RJ7/X6XYTKIVDUW7GZTZPZNN4EUM5KH54KHF.woff') format('woff'),
+         url('//cdn.fontshare.com/wf/NWBQYJIM7GCZ5XWD7D26ARB3VDY55ZRT/K63EV2KZIGKLE7RANQ2U42S6SVHU5RJ7/X6XYTKIVDUW7GZTZPZNN4EUM5KH54KHF.ttf') format('truetype');
+    font-weight: 300 900;
+    font-display: swap;
+    font-style: normal;
 }
 
-/* Array */
-@font-face {
-  font-family: 'Array';
-  src: url('//cdn.fontshare.com/wf/4QBZHM3FOPYBI67YBLLWZV6ZYIUQTKEE/RXSUFPNEA6YXGQDMHMP3OODY6UWXRJBM/C6VM2RT4EU2NNT5XZWVYHR7WOIOGM4EU.woff2') format('woff2'),
-       url('//cdn.fontshare.com/wf/4QBZHM3FOPYBI67YBLLWZV6ZYIUQTKEE/RXSUFPNEA6YXGQDMHMP3OODY6UWXRJBM/C6VM2RT4EU2NNT5XZWVYHR7WOIOGM4EU.woff') format('woff'),
-       url('//cdn.fontshare.com/wf/4QBZHM3FOPYBI67YBLLWZV6ZYIUQTKEE/RXSUFPNEA6YXGQDMHMP3OODY6UWXRJBM/C6VM2RT4EU2NNT5XZWVYHR7WOIOGM4EU.ttf') format('truetype');
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-
-/* Mevcut stil ayarları */
 body {
     margin: 0;
-    font-family: 'Satoshi', sans-serif; /* Satoshi fontunu kullan */
+    font-family: 'Satoshi', Arial, sans-serif;
     background: url('https://r2.guns.lol/f549d67c-c15e-4c5f-86f0-0dcdd8f27b67.gif') no-repeat center center fixed;
     background-size: cover;
     color: white;
@@ -58,7 +46,6 @@ nav ul li a {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'Array', sans-serif; /* Array fontunu kullan */
     font-size: 24px;
     font-weight: bold;
 }
@@ -100,21 +87,12 @@ nav ul li a {
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
-    flex-wrap: wrap;
 }
 
 .btn-container {
-    display: inline-block;
-    padding: 10px;
-    border: 2px solid;
-    border-radius: 5px;
-    text-align: center;
-    margin: 10px;
-}
-
-.btn-container p {
-    margin: 0;
-    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .btn-discord {
