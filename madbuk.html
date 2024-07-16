@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madbuk Scripts</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script> <!-- Burada defer ekleniyor -->
+    <script src="scripts.js" defer></script>
 </head>
 <body>
+    <audio autoplay loop>
+        <source src="https://r2.guns.lol/f2af81f4-1656-4f93-9156-4ac2d3af9c8f.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <header>
         <div class="logo">M</div>
         <nav>
@@ -45,15 +49,20 @@
             </div>
         </div>
     </main>
-    <audio autoplay loop>
-        <source src="https://r2.guns.lol/f2af81f4-1656-4f93-9156-4ac2d3af9c8f.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
     <script>
-        function playMusic() {
-            var audio = document.getElementById("background-music");
-            audio.play();
-        }
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.btn-scripts').addEventListener('click', function() {
+                window.location.href = 'scripts.html';
+            });
+
+            document.querySelector('.btn-discord').addEventListener('click', function() {
+                window.location.href = 'https://discord.com';
+            });
+
+            document.querySelector('.btn-youtube').addEventListener('click', function() {
+                window.location.href = 'https://youtube.com';
+            });
+        });
     </script>
 </body>
 </html>
