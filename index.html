@@ -11,7 +11,7 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-image: url('https://r2.guns.lol/f549d67c-c15e-4c5f-86f0-0dcdd8f27b67.gif'); 
+            background-image: url('https://r2.guns.lol/f549d67c-c15e-4c5f-86f0-0dcdd8f27b67.gif');
             background-size: cover;
             color: #fff;
             font-family: Arial, sans-serif;
@@ -19,20 +19,25 @@
         }
         .btn-ata {
             padding: 20px 40px;
-            background-color: transparent; 
+            background-color: transparent; /* Arka plan görünmez */
             color: #fff;
             border: none;
             border-radius: 5px;
-            font-size: 30px; 
-            text-decoration: none; 
+            font-size: 30px; /* Yazıyı büyüt */
+            text-decoration: none; /* Alt çizgiyi kaldır */
             transition: background 0.3s;
         }
         .btn-ata:hover {
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: rgba(255, 255, 255, 0.2); /* Hover efekti */
         }
     </style>
+    <script>
+        function openPage() {
+            window.location.href = 'madbuk.html';
+        }
+    </script>
 </head>
-<body>
-    <a href="madbuk.html" class="btn-ata">ATA</a>
+<body onclick="openPage()">
+    <a class="btn-ata">ATA</a>
 </body>
 </html>
