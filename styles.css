@@ -64,7 +64,9 @@ nav ul li a {
 }
 
 .container::before,
-.container::after {
+.container::after,
+.container::nth-child(1)::before,
+.container::nth-child(1)::after {
     content: "";
     position: absolute;
     top: 0;
@@ -79,6 +81,18 @@ nav ul li a {
 
 .container::after {
     right: 0;
+}
+
+.container::nth-child(1)::before {
+    top: 0;
+    left: 0;
+    height: 5px;
+}
+
+.container::nth-child(1)::after {
+    bottom: 0;
+    right: 0;
+    height: 5px;
 }
 
 h2 {
