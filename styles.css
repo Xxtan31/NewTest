@@ -74,6 +74,13 @@ h2 {
     background: gray;
 }
 
+.divider {
+    border: none;
+    height: 2px;
+    background: white;
+    margin: 20px 0;
+}
+
 .buttons {
     display: flex;
     justify-content: center;
