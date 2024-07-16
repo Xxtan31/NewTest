@@ -1,11 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    
-    var audio = document.querySelector('audio');
-    audio.loop = true;
-    audio.play().catch(error => {
-        console.log('Müzik otomatik olarak çalınamadı:', error);
-    });
-
     document.querySelector('.btn-scripts').addEventListener('click', function() {
         window.location.href = 'scripts.html';
     });
