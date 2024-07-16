@@ -11,26 +11,28 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #000;
+            background-image: url('https://example.com/background.jpg'); /* Arka plan resmi URL */
+            background-size: cover;
             color: #fff;
             font-family: Arial, sans-serif;
+            cursor: pointer;
         }
         .btn-ata {
             padding: 20px 40px;
-            background-color: #fff;
-            color: #000;
+            background-color: transparent; /* Arka plan görünmez */
+            color: #fff;
             border: none;
             border-radius: 5px;
-            font-size: 20px;
-            cursor: pointer;
+            font-size: 30px; /* Yazıyı büyüt */
+            text-decoration: none; /* Alt çizgiyi kaldır */
             transition: background 0.3s;
         }
         .btn-ata:hover {
-            background-color: #ddd;
+            background-color: rgba(255, 255, 255, 0.2); /* Hover efekti */
         }
     </style>
 </head>
 <body>
-    <button class="btn-ata" onclick="location.href='madbuk.html'">ATA</button>
+    <a href="madbuk.html" class="btn-ata">ATA</a>
 </body>
 </html>
