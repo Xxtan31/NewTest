@@ -83,14 +83,26 @@ nav ul li a {
     right: 0;
 }
 
-.container::nth-child(1)::before {
+.container::before {
     top: 0;
     left: 0;
     height: 5px;
 }
 
-.container::nth-child(1)::after {
+.container::after {
     bottom: 0;
+    right: 0;
+    height: 5px;
+}
+
+.container::after {
+    bottom: 0;
+    left: 0;
+    height: 5px;
+}
+
+.container::before {
+    top: 0;
     right: 0;
     height: 5px;
 }
