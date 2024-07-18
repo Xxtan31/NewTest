@@ -21,24 +21,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Görüntüleme sayacı
     const viewCountElement = document.getElementById("view-count");
-    const viewed = localStorage.getItem("viewed");
+    const viewCountKey = 'viewCount';
+    const viewedKey = 'viewed';
 
+    let viewCount = localStorage.getItem(viewCountKey) || 0;
+    const viewed = localStorage.getItem(viewedKey);
+
+    // Eğer kullanıcı daha önce siteyi ziyaret etmediyse
     if (!viewed) {
-        fetch("/update-view-count", {
-            method: "POST"
-        })
-        .then(response => response.json())
-        .then(data => {
-            viewCountElement.textContent = data.viewCount;
-            localStorage.setItem("viewed", "true");
-        })
-        .catch(error => console.error("Error updating view count:", error));
-    } else {
-        fetch("/get-view-count")
-        .then(response => response.json())
-        .then(data => {
-            viewCountElement.textContent = data.viewCount;
-        })
-        .catch(error => console.error("Error fetching view count:", error));
+        viewCount = parseInt(viewCount) + 1;
+        localStorage.setItem(viewCountKey, viewCount);
+        localStorage.setItem(viewedKey, 'true');
     }
+
+    viewCountElement.textContent = viewCount;
 });
