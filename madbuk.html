@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madbuk Scripts</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script> <!-- Burada defer ekleniyor -->
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
@@ -49,6 +49,10 @@
         <source src="https://r2.guns.lol/f2af81f4-1656-4f93-9156-4ac2d3af9c8f.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
+    <div class="view-counter">
+        <img src="images/eye-icon.png" alt="Views">
+        <span id="view-count">0</span>
+    </div>
     <script>
         function playMusic() {
             var audio = document.getElementById("background-music");
