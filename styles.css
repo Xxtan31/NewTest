@@ -140,4 +140,22 @@ nav ul li a {
 
 .btn-music:hover {
     background: gray;
-  }
+}
+
+.view-counter {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.view-counter img {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+}
