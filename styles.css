@@ -127,21 +127,6 @@ nav ul li a {
     color: white;
 }
 
-.btn-music {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: white;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.btn-music:hover {
-    background: gray;
-}
-
 .view-counter {
     position: fixed;
     bottom: 10px;
