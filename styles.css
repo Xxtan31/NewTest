@@ -129,8 +129,8 @@ nav ul li a {
 
 .view-counter {
     position: fixed;
-    top: 10px; /* Üstten 10px mesafede */
-    right: 10px; /* Sağdan 10px mesafede */
+    top: 5px; /* Üstten 10px mesafede */
+    left: 10px; /* Sağdan 10px mesafede */
     display: flex;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
