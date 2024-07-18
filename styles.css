@@ -129,15 +129,15 @@ nav ul li a {
 
 .view-counter {
     position: fixed;
-    bottom: 7px;
-    left: 10px;
+    top: 10px; /* Üstten 10px mesafede */
+    right: 10px; /* Sağdan 10px mesafede */
     display: flex;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px 10px;
     border-radius: 5px;
     color: white;
-}
+    }
 
 .view-counter img {
     width: 20px;
